@@ -1490,7 +1490,7 @@ border-radius: 0px;
 
 
 <h1 class="title toc-ignore">World Ursidae analysis</h1>
-<h4 class="date">2022/11/20</h4>
+<h4 class="date">2022/11/30</h4>
 
 </div>
 
@@ -1703,7 +1703,13 @@ sp_eco   &lt;- read_sp_eco(here::here(&quot;data&quot;, &quot;wildfinder&quot;, 
 <h1>Species selection</h1>
 <pre class="r"><code>## Select species ----
 
-sp_list &lt;- select_species(sp_list, family = params$&quot;mammals_family&quot;)</code></pre>
+sp_list &lt;- select_species(sp_list, family = params$&quot;mammals_family&quot;)
+## Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+## ℹ Please use `&quot;species_id&quot;` instead of `.data$species_id`
+## Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+## ℹ Please use `&quot;sci_name&quot;` instead of `.data$sci_name`
+## Warning: Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+## ℹ Please use `&quot;family&quot;` instead of `.data$family`</code></pre>
 <table>
 <caption>List of World Ursidae species</caption>
 <thead>
